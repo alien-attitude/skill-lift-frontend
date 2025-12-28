@@ -46,7 +46,7 @@ export function ProgramProgress({totalDays, currentDays}) {
                     </div>
                     <div className= " ml-3 ">
                         <p className= " text-sm font-medium text-gray-500 "> Completion Date</p>
-                        <p className= " font-semibold text-gray-800 "> June 23, 2027</p>
+                        <p className= " font-semibold text-gray-800 vgggg "> June 23, 2027</p>
                     </div>
                 </div>
             </div>

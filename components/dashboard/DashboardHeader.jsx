@@ -1,7 +1,8 @@
 import React from 'react';
 import {UserIcon, MenuIcon} from 'lucide-react'
+import PropTypes from 'prop-types';
 
-export function DashboardHeader() {
+export function DashboardHeader(onAuthClick) {
     return <header className= "bg-white shadow ">
         <div className="container mx-auto px-4 ">
             <div className="flex justify-between items-center h-16 ">
@@ -35,7 +36,7 @@ export function DashboardHeader() {
                 </div>
                 {/* Right side actions*/}
                 <div className= "flex items-center ">
-                    <button className= "flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors text-lg">
+                    <button onClick={onAuthClick} className= "flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors text-lg">
                         <UserIcon size={18} />
                         <span>Sign In</span>
                     </button>
@@ -49,4 +50,8 @@ export function DashboardHeader() {
             </div>
         </div>
     </header>
+}
+
+DashboardHeader.propTypes = {
+    onAuthClick: PropTypes.func.isRequired
 }
