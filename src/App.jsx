@@ -11,7 +11,7 @@ export function App() {
     return <div className= " min-h-screen bg-gray-50 w-full" >
         <DashboardHeader onAuthClick ={() => setIsAuthModalOpen(true)}/>
         <main className= " container mx-auto px-4 py-8">
-            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className=" grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {/* Left column - Program info */}
                 <div className=" lg:col-span-2 space-y-6">
                     <ProgramProgress totalDays={1500} currentDays={375} />
